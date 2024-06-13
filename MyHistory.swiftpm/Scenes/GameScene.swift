@@ -10,6 +10,7 @@ import Foundation
 import SpriteKit
 import GameplayKit
 
+#warning("Função global cara? Poderia ser uma extension")
 func addTextures(quantity: Int, prefix: String) -> [SKTexture]{
     var animation: [SKTexture] = []
     for i in 0...quantity{
@@ -89,7 +90,7 @@ public class GameScene: SKScene {
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.isEmpty{
-            
+            #warning("Esqueceu aqui foi...")
         }else{
             let location = touches.first?.location(in: self)
             if location!.x >= 0 {

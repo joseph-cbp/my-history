@@ -8,8 +8,9 @@
 import Foundation
 import SpriteKit
 
+#warning("Por que usar o SKSpriteNode e não um SKNode?")
 class AttackMenu: SKSpriteNode{
-    
+    #warning("Verificar a questão dos modificadores de acesso.")
     public var textoDaLabel = ""
     
     public override init(texture: SKTexture?, color: UIColor, size: CGSize){
@@ -23,6 +24,7 @@ class AttackMenu: SKSpriteNode{
     }
     
     private func createButtons(){
+        #warning("Poderia colocar as posições em relação ao tamanho da tela!")
         self.createAttackButton(text: "Pedra", name:"attack1", x: -450, y: -50)
         self.createAttackButton(text: "Milho", name:"attack2", x: 450, y: -50)
     }

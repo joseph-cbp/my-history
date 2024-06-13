@@ -18,6 +18,8 @@ class Galinha: BattleChar {
         case .baterAsa:
             BattleChar.modificarCoragem(modificador: -1)
         case .bicar:
+            #warning("O warning padrão já diz tudo...")
+            // poderia usar o let _ =
             self.ataque(BattleChar: BattleChar)
         }
     }

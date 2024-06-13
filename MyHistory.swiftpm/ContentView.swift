@@ -3,6 +3,7 @@ import SpriteKit
 
 struct ContentView: View {
     let startScene = StartScene()
+    #warning("Por que criou todas as cenas aqui?")
     let firstScene = GameScene()
     let secondScene = BattleScene()
     let thirdScene = FinalScene(text: "teste")

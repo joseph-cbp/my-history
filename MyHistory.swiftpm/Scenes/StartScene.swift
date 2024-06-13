@@ -47,6 +47,7 @@ public class StartScene: SKScene {
         addChild(self.text)
     }
     
+    #warning("Add nenhum button!")
     public func addButton(){}
     
     public override func sceneDidLoad() {

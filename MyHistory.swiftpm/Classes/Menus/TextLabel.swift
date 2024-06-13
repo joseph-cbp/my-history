@@ -17,6 +17,7 @@ class TextLabel: SKSpriteNode{
     }
     public var textLabel : SKLabelNode!
     
+    #warning("E esse comentário aqui?")
     private func createTextLabel( /*name: String, x: Int, y: Int*/){
         let textLabel = SKLabelNode(text: self.text)
         textLabel.fontSize = self.size.height * 0.4

@@ -201,6 +201,7 @@ class BattleScene: SKScene {
     }
     
     func attackList(attack: String){
+        #warning("Poderia usar um enum aqui!")
             switch attack{
             case "attackButton":
                 self.menu.isHidden = true

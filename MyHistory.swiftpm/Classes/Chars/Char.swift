@@ -13,6 +13,7 @@ public class Char: SKNode {
     public enum State{
         case stand, forward, backward, playerJump, galinhaJump, galinhaBicar
     }
+    #warning("Por que usou o ! ")
     public var image: SKSpriteNode!
     public var animationStand: [SKTexture]!
     public var animationRun: [SKTexture]!
@@ -23,6 +24,7 @@ public class Char: SKNode {
         self.animationRun = animationRun
         super.init()
         self.addChild(self.image)
+        #warning("Se a escala 1 não esta mudando nada!")
         self.setScale(1)
         setState(inGame: .stand)
     }
@@ -38,6 +40,7 @@ public class Char: SKNode {
             self.image.run(.repeatForever(.animate(with: animationStand, timePerFrame: 0.2)))
         case .forward:
             if !verifyWidth(){
+                #warning("Aqui poderia usar o setScale")
                 image.size.width *= -1
             }
             self.run(.repeatForever(.move(by: CGVector(dx: 80, dy: 0), duration: 0.3)))
